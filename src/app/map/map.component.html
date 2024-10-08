@@ -1,0 +1,9 @@
+<ActionBar title="Find Parking"></ActionBar>
+
+<GridLayout rows="*, auto">
+  <MapView (mapReady)="onMapReady($event)" row="0"></MapView>
+  <StackLayout orientation="horizontal" row="1" class="p-2">
+    <Button text="Mark Available" (tap)="markParkingSpaceAvailable()" class="btn btn-success m-1"></Button>
+    <Button text="Mark Occupied" (tap)="markParkingSpaceOccupied()" class="btn btn-danger m-1"></Button>
+  </StackLayout>
+</GridLayout>

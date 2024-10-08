@@ -1,0 +1,8 @@
+<ActionBar [title]="isLogin ? 'Login' : 'Sign Up'"></ActionBar>
+
+<StackLayout class="p-4">
+  <TextField [(ngModel)]="email" hint="Email" keyboardType="email" autocorrect="false" autocapitalizationType="none" class="mb-2"></TextField>
+  <TextField [(ngModel)]="password" hint="Password" secure="true" class="mb-4"></TextField>
+  <Button [text]="isLogin ? 'Login' : 'Sign Up'" (tap)="onSubmit()" class="btn btn-primary mb-2"></Button>
+  <Button [text]="isLogin ? 'Create an account' : 'Already have an account?'" (tap)="toggleAuthMode()" class="btn btn-secondary"></Button>
+</StackLayout>

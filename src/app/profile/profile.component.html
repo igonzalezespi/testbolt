@@ -1,0 +1,6 @@
+<ActionBar title="Profile"></ActionBar>
+
+<StackLayout class="p-4">
+  <Label [text]="'Email: ' + (user?.email || 'Not available')" class="mb-2"></Label>
+  <Button text="Sign Out" (tap)="signOut()" class="btn btn-primary"></Button>
+</StackLayout>
